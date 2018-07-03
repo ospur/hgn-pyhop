@@ -35,10 +35,12 @@ When creating a domain, the following requirements must be satisfied:
             <state>.<type> = {..., <object>,...}
             - Here is an example in the satellite domain:
                     state1.instruments = {'instrument0'}
+                    
     - HGNpyhop uses an state-variable representation of the form:
             <state>.<variable>={..., <object>:<value>,...}
             - Here is an example in the satellite domain:
                     state1.power_on = {'instrument0': False}
+                    
     - The name of a goal must have the same name as an state variable. It has to indicate the expected value for the object:
             (<variable>,<object>,<value>)
              - Here is an example of a goal:
