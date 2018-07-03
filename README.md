@@ -2,7 +2,7 @@
 
 ## Introduction
 
-HGNpyhop is a modificaition of [Pyhop](https://bitbucket.org/dananau/pyhop/). It works with Hierarchical Goal Networks (HGN) instead of Hierarchical Task Networks (HTN).
+HGNpyhop is a modification of [Pyhop](https://bitbucket.org/dananau/pyhop/). It works with Hierarchical Goal Networks (HGN) instead of Hierarchical Task Networks (HTN).
 
 ## License
 
