@@ -11,19 +11,19 @@ HGNpyhop is released under the Apache License 2.0.
 
 In HGNpyhop, goals (instead of tasks) are decomposed. As per Shivashankar, V. (2015). [Hierarchical goal networks: Formalisms and algorithms for planning and acting (Doctoral dissertation).](https://drum.lib.umd.edu/bitstream/handle/1903/16698/Shivashankar_umd_0117E_16202.pdf):
 
-Let goals be the list of goals to satisfy
+          Let goals be the list of goals to satisfy
 
-Case 1: if goals is empty, then return plan
+          Case 1: if goals is empty, then return plan
 
-Let g be the first goal of goals; remove g from goals
-Case 2: if g is satisfied in the state then recursively plan generation
-          for goals
+          Let g be the first goal of goals; remove g from goals
+          Case 2: if g is satisfied in the state then recursively plan generation
+                    for goals
           
-Case 3: If action a has g as an effect and a is applicable then apply a,
-        plan CAT a, and continue recursively plan generation for goals
+          Case 3: If action a has g as an effect and a is applicable then apply a,
+                    plan CAT a, and continue recursively plan generation for goals
         
-Case 4: If method m has g as last subgoal and m is applicable, then
-        recursive plan generation for (m's subgoals) CAT goals
+          Case 4: If method m has g as last subgoal and m is applicable, then
+          recursive plan generation for (m's subgoals) CAT goals
         
 The actual algorithm in Vikas's dissertation combines Cases 3 and 4 to choose between
 "RELEVANT" methods and operators. In our implementation it tries actions first
