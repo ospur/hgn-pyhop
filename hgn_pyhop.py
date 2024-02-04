@@ -1,6 +1,5 @@
 """
 HGNpyhop is an extension that adds Hierarchical Goal Network capabilities to Pyhop.
-Authors of the extension: Weihang Yuan and Hector Munoz-Avila
 Version: 1.0
 HGNpyhop is released under the Apache License 2.0.
 
